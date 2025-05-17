@@ -1,5 +1,4 @@
-const { Console } = require('console')
-const fs = require('fs')
+const fs = require('fs').promises
 const path = require('path')
 
 
@@ -15,7 +14,7 @@ async function initRepo(){
         
 
     }catch (err){
-        console.log("Error in initializing the repo", err)
+        console.log("Error in initializing the repo",err)
     }
 }
 
